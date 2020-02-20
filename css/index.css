@@ -135,6 +135,7 @@ html {
 html,
 body {
   font-family: 'Roboto', sans-serif;
+  font-weight: bold;
 }
 h1,
 h2,
@@ -211,6 +212,19 @@ header div {
   font-size: medium;
   text-decoration: none;
   text-align: center;
+}
+.navcontainer nav .nav-button:hover {
+  background-color: #ffffff;
+  animation-name: example;
+  animation-duration: 1s;
+}
+@keyframes example {
+  from {
+    background-color: white;
+  }
+  to {
+    background-color: #ffffff;
+  }
 }
 @media (max-width: 500px) {
   .navcontainer nav .nav-button {
@@ -375,6 +389,19 @@ header div {
   border-radius: 15px;
   font-size: large;
   padding: 4% 0;
+}
+.home .content-pick .destination .btn:hover {
+  background-color: #7adeee;
+  animation-name: example;
+  animation-duration: 1s;
+}
+@keyframes example {
+  from {
+    background-color: #17A2B8;
+  }
+  to {
+    background-color: #7adeee;
+  }
 }
 @media (max-width: 500px) {
   .home .content-pick .destination .btn {
