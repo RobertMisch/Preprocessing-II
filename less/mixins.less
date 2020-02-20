@@ -1,1 +1,40 @@
 // Mixins in here
+.flex(@justify, @align){
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.seperators(){
+    border: 2px dashed lightgrey;
+}
+
+.mobilemode(){
+    display: flex;
+    flex-direction: column;
+    width:100%;
+}
+
+.button(@size, @color, @fontcolor:white){
+    width: @size;
+    background-color: @color;
+    color: @fontcolor;
+    border-radius: 15px;
+    font-size: large;
+    padding: 4% 0;
+    @color2: lighten(@color, 30%);
+    &:hover{
+        background-color: @color2;
+        .animation(@color, @color2);
+    }
+}
+
+.animation(@color1, @color2){
+    animation-name: example;
+    animation-duration: 1s;
+
+    @keyframes example {
+        from {background-color: @color1}
+        to {background-color: @color2}
+      }
+}
