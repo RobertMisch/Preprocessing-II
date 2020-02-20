@@ -1,1 +1,41 @@
 // Navigation Styles here
+header{
+    width: 100%;
+    .flex(space-between, center);
+    @media @mobile{
+        flex-direction: column;
+    }
+    div{
+        margin: 2%;
+        margin-top: 4%;
+    }
+    @media @mobile{
+        div{
+            margin: 1%;
+        }
+    }
+}//header end
+.navcontainer{
+    width:45%;
+    @media @mobile{
+        width: 100%;
+    }
+    nav{
+    .flex(space-around, center);
+        .nav-button{
+            .button(30%, white, black);
+            font-size: medium;
+            text-decoration: none;
+            text-align: center;
+            @media @mobile{
+                padding: 1% 0;
+            }
+        }//button end
+    }//nav end
+}//navcontainer end
+
+.nav-seperator{
+    width:100%;
+    .seperators();
+    margin-bottom: 0;
+}

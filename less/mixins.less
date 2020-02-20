@@ -1,1 +1,29 @@
 // Mixins in here
+.flex(@justify, @align){
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.seperators(){
+    border: 2px dashed lightgrey;
+}
+
+.mobilemode(){
+    display: flex;
+    flex-direction: column;
+    width:100%;
+}
+
+.button(@size, @color, @fontcolor:white){
+    width: @size;
+    background-color: @color;
+    color: @fontcolor;
+    border-radius: 15px;
+    font-size: large;
+    padding: 4% 0;
+}
+
+.animation(@color1, @color2){
+
+}
